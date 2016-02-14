@@ -1,0 +1,16 @@
+source 'https://rubygems.org'
+ruby '2.2.3'
+
+gem 'sinatra'
+gem 'activerecord'
+gem 'sinatra-activerecord'
+
+gem 'shotgun'
+gem 'tux'
+gem 'sqlite3'
+gem 'rake'
+gem 'require_all'
+gem 'slim'
+gem 'json'
+gem 'rest-client'
+gem 'sinatra-assetpack'
