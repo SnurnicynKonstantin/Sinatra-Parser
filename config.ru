@@ -1,5 +1,8 @@
 require './config/environment'
 
-#run PostController
-map('/'){run CourseController}
-map('/course'){run CourseController}
+use Rack::Coffee, root: 'public', urls: '/javascripts'
+
+map('/') {run ApplicationController}
+map('/course') {run CourseController}
+map('/session') {run SessionController}
+map('/user') {run UserController}

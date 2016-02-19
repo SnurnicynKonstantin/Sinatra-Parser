@@ -1,7 +1,17 @@
 doctype html
 html
   head
-    link href='/bootstrap.css' rel='stylesheet' type='text/css'
-  title  Курс валют
+    link href='/css/bootstrap.css' rel='stylesheet' type='text/css'
+    script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'
+    script src='https://code.highcharts.com/highcharts.js'
+    script src='https://code.highcharts.com/modules/exporting.js'
+    script src='/javascripts/script.js'
+    title  Курс валют
   body
-    == yield
+    == slim :'partials/_header'
+
+    div style='height:40px'
+
+    div class='container'
+      == yield
+

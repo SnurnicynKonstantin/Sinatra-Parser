@@ -1,9 +1,0 @@
-h1 Отношение доллара и евро к рублю
-a href="/course/new" = 'Получить новые данные'
-
-/- @parse_course.each do |key, value|
-    p "#{key} => #{value}"
-
-- @courses.each do |course|
-    br
-    a href="/course/#{course.id}" = "- Курс доллара: #{course.usd}, курс евро #{course.eur} на #{course.created_at}"
