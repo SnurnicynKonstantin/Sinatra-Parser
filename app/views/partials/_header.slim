@@ -1,0 +1,13 @@
+div class='navbar navbar-default navbar-fixed-top'
+  div class='container'
+    div class='navbar-header'
+      a href='/' class='navbar-brand' = 'Курс валют'
+    ul class='nav navbar-nav navbar-right'
+      - if signed_in?
+        li
+          a href='/user/#{current_user.id}' Привет #{current_user.name}
+        li
+          a href='/logout' Выход
+      - else
+        li
+          a href='/login' Вход

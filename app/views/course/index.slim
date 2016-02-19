@@ -1,0 +1,9 @@
+h1 Отношение доллара и евро к рублю
+
+form action="/course/new" method="POST" id='get-course-form'
+    input type="text" name="id" value="new" style="visibility: hidden"
+    a class='btn btn-primary' href="#" onclick="document.getElementById('get-course-form').submit();" = 'Получить новые данные'
+
+- @courses.each do |course|
+    br
+    a href="/course/#{course.id}" = "- Курс доллара: #{course.usd}, курс евро #{course.eur} на #{course.date}"
